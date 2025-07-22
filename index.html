@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Evi Afiyatus Solihah- Portofolio</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <a href="#home" class="logo">Viapiyatus</a>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!-- akhir header section -->
+
+    <!-- Banner -->
+    <section class="home" id="home">
+      <div class="container-fluid d-flex flex-column h-100 position-relative">
+        <div class="home-content">
+          <h3>Hi, I'm</h3>
+          <h1>Evi <span class="multiple-text"></span></h1>
+          <p>Welcome to my space. Let's explore together on this adventure and discover many interesting things!</p>
+          <div class="sosial-media">
+            <a href="https://www.facebook.com/evi.afiyatuss?locale=id_ID" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/evi-afiyatus-solihah" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/viapiyaaa" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/eviafiyatus_?igsh=MTRoNGEyaml0Z3dwZg==" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <a href="#projects" class="btn btn-primary mt-5">Projects</a>
+        </div>
+      </div>
+      <canvas id="threeCanvas"></canvas>
+    </section>
+
+    <!-- akhir banner -->
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="about-img">
+              <img src="gambar/Layer 01.png" alt="About Image" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about-content">
+              <h2 class="heading">About <span>Me</span></h2>
+              <p>
+                Hello! I am Evi Afiyatus Solihah, an undergraduate student in Computer Engineering at the Indonesian University of Education Bandung with Computer Engineering student with a strong interest in Machine Learning, Artificial
+                Intelligence, and intelligent system development. Have experience in data processing, machine learning model development, and web application development. Apply machine learning and data analysis techniques in academic
+                projects, implementing models using simple web interfaces. Active in organizational activities, used to working together, and have high attention to detail.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- AKHIR ABOUT -->
+
+    <!-- My Projects Section -->
+    <section id="projects" class="projects-section py-5">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      <h3 class="subheading">Data & ML Projects</h3>
+      <!-- Carousel untuk menampilkan proyek -->
+      <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <!-- Tambahkan lebih banyak indikator jika Anda memiliki lebih dari 3 slide -->
+        </div>
+
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center g-4">
+              <!-- Project Card 1: Machine Learning (Featured) -->
+              <div class="col-12 col-sm-6 col-md-4 d-flex">
+                <div class="project-card">
+                  <img src="gambar/trashgu.png" alt="Predictive Maintenance ML Project" onerror="this.onerror=null;this.src='https://placehold.co/400x200/4CAF50/FFFFFF?text=ML+Project+1';" />
+                  <div class="project-card-body">
+                    <h3>Web-based waste detection and classification system using CNN</h3>
+                    <p>
+                      Collaborated in a 6-person team split into Machine Learning and Web Development roles. Developed a web application using Flask and implemented a customized Convolutional Neural Network (CNN) based on MobileNet
+                      architecture, enhanced with additional layers. Achieved a classification accuracy of 93.70%.
+                    </p>
+                    <div class="project-card-tech">Teknologi: Python, TensorFlow (MobileNetV2), Keras, scikit-image, ImageDataGenerator, Matplotlib, scikit-learn</div>
+                    <div class="project-links">
+                      <a href="https://github.com/viapiyaaa/Capstone_CC25_CF125" target="_blank" title="Lihat di GitHub"><i class="fa-brands fa-github"></i></a>
+                      <a href="https://drive.google.com/file/d/1CaVNP65QcfQBCPXbvKJFPAZim51xQ9Al/view?usp=sharing" target="_blank" title="Lihat Demo Langsung (Streamlit/Flask)"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Card 2: Data Analysis (Featured) -->
+              <div class="col-12 col-sm-6 col-md-4 d-flex">
+                <div class="project-card">
+                  <img src="gambar/analisissentimen.png" alt="COVID-19 Data Visualization Project" onerror="this.onerror=null;this.src='https://placehold.co/400x200/2196F3/FFFFFF?text=Data+Viz+Project';" />
+                  <div class="project-card-body">
+                    <h3>Sentiment Analysis of Gojek App Reviews.</h3>
+                    <p>
+                      Classifying user reviews into positive, neutral, or negative categories. Scraping data using Google Play Scraper. Preprocessing text data, extracting features with TF-IDF, Bag of Words (BoW) and Word Embedding. The
+                      best accuracy score of LSTM with Feature Engineering Word Embedding is 99.02%
+                    </p>
+                    <div class="project-card-tech">Teknologi: Python, Pandas, NumPy, Matplotlib, Seaborn, WordCloud, Sastrawi, NLTK, scikit-learn, TensorFlow, Google Play Scraper, Streamlit</div>
+                    <div class="project-links">
+                      <a href="https://github.com/viapiyaaa/Project_Sentiment_Analysis_Gojek" target="_blank" title="Lihat di GitHub"><i class="fa-brands fa-github"></i></a>
+                      <a href="https://sentiment-analysis-gojek.streamlit.app/" target="_blank" title="Lihat Demo Langsung"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Card 3: Web Development (NOT Deployed) -->
+              <div class="col-12 col-sm-6 col-md-4 d-flex">
+                <div class="project-card">
+                  <img src="gambar/bike.png" alt="E-commerce Website Frontend" onerror="this.onerror=null;this.src='https://placehold.co/400x200/FFC107/000000?text=Web+Project+1';" />
+                  <div class="project-card-body">
+                    <h3>Data analysis with bike sharing dataset</h3>
+                    <p>
+                      The project analyzed bicycle loan patterns by day and time of day. As a result, most borrowing occurs on weekdays, especially in the morning and evening, indicating routine use. Weekends and holidays were dominated by
+                      recreational use. While early morning borrowing was common, the number of bicycles borrowed was low. This finding is useful for organizing bicycle availability according to time of day and need.
+                    </p>
+                    <div class="project-card-tech">Teknologi: Pandas, Matplotlib, Seaborn, Streamlit</div>
+                    <div class="project-links">
+                      <a href="https://github.com/viapiyaaa/Project_Analisis_Data" target="_blank" title="Lihat di GitHub"><i class="fa-brands fa-github"></i></a>
+                      <a href="https://bike-recycle.streamlit.app/" target="_blank" title="Lihat Demo Langsung"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 (Contoh untuk proyek tambahan) -->
+          <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+              <!-- Project Card 4: ML (Featured) -->
+              <div class="col-12 col-sm-6 col-md-4 d-flex">
+                <div class="project-card">
+                  <img src="gambar/footwear.png" alt="Natural Language Processing Project" onerror="this.onerror=null;this.src='https://placehold.co/400x200/FF5722/FFFFFF?text=ML+Project+4';" />
+                  <div class="project-card-body">
+                    <h3>Image Classification of Footwear</h3>
+                    <p>
+                      Building a deep learning model using Convolutional Neural Network (CNN) to classify footwear images into three categories: boots, shoes, and sandals. Preprocessing the data, and dividing it into training, validation,
+                      and testing sets. Converting the model to SaveModel. TensorFlow.js, and TFLite, the accuracy is 93.88%.
+                    </p>
+                    <div class="project-card-tech">Teknologi: Python, TensorFlow, Keras (MobileNet, DenseNet121), OpenCV, scikit-image, scikit-learn, Streamlit</div>
+                    <div class="project-links">
+                      <a href="https://github.com/viapiyaaa/Project_Footwear_Image_Classification" target="_blank" title="Lihat di GitHub"><i class="fa-brands fa-github"></i></a>
+                      <a href="https://footwear-image-classification.streamlit.app/" target="_blank" title="Lihat Demo Langsung"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Card 5 -->
+              <div class="col-12 col-sm-6 col-md-4 d-flex">
+                <div class="project-card">
+                  <img src="gambar/obesitas.png" alt="Image Classification Project" onerror="this.onerror=null;this.src='https://placehold.co/400x200/673AB7/FFFFFF?text=Project+5';" />
+                  <div class="project-card-body">
+                    <h3>Predictive Analysis: Obesity Category Classification</h3>
+                    <p>
+                      Developed a model to classify obesity levels using features like age, gender, height, weight, BMI, and physical activity. Applied preprocessing, EDA, and trained models including Random Forest, KNN, and SVM. Random
+                      Forest achieved the best accuracy at 91.84%.
+                    </p>
+                    <div class="project-card-tech">Teknologi: Python, scikit-learn, Pandas, Matplotlib, Seaborn</div>
+                    <div class="project-links">
+                      <a href="https://github.com/viapiyaaa/Project_Predictive_Analysis_Obesitas" target="_blank" title="Lihat di GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Card 6 -->
+              <div class="col-12 col-sm-6 col-md-4 d-flex">
+                <div class="project-card">
+                  <img src="gambar/film.png" alt="Time Series Forecasting" onerror="this.onerror=null;this.src='https://placehold.co/400x200/00BCD4/FFFFFF?text=Project+6';" />
+                  <div class="project-card-body">
+                    <h3>Movies Recommendation System</h3>
+                    <p>
+                      Building a movie recommender system using MovieLens dataset. Performing Exploratory Data Analysis (EDA) and data preprocessing to prepare the dataset. Implementing two approaches: collaborative filtering using
+                      RecommenderNet and content-based filtering using TF-IDF and Cosine Similarity based on movie genres.
+                    </p>
+                    <div class="project-card-tech">Teknologi: Python, scikit-learn, Pandas, Matplotlib, TF-IDF, Cosine Similarity</div>
+                    <div class="project-links">
+                      <a href="https://github.com/viapiyaaa/Project_Recommendation_System" target="_blank" title="Lihat di GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 (Contoh untuk proyek tambahan) -->
+          <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+              <!-- Project Card 7 -->
+              <div class="col-12 col-sm-6 col-md-4 d-flex">
+                <div class="project-card">
+                  <img src="gambar/clustering.png" alt="Recommendation System" onerror="this.onerror=null;this.src='https://placehold.co/400x200/E91E63/FFFFFF?text=Project+7';" />
+                  <div class="project-card-body">
+                    <h3>Clustering and Classification: Fraud Detection</h3>
+                    <p>
+                      Building a fraud detection system with a machine learning approach using supervised and unsupervised learning methods. This project includes clustering transaction data using the K-Means algorithm (unsupervised) and
+                      classifying potential fraud using the SVM and KNN algorithms (supervised).
+                    </p>
+                    <div class="project-card-tech">Teknologi: Python, scikit-learn, Matplotlib, Seaborn</div>
+                    <div class="project-links">
+                      <a href="https://github.com/viapiyaaa/Project_Supervised_Unsupervised" target="_blank" title="Lihat di GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Card 8 -->
+              <div class="col-12 col-sm-6 col-md-4 d-flex">
+                <div class="project-card">
+                  <img src="gambar/etl.png" alt="Web Scraping for Data Collection" onerror="this.onerror=null;this.src='https://placehold.co/400x200/8BC34A/FFFFFF?text=Project+8';" />
+                  <div class="project-card-body">
+                    <h3>Automated ETL Pipeline</h3>
+                    <p>
+                      Build an ETL pipeline to extract, clean, and store data. This pipeline includes web mining, data transformation (Cleaning, Data type conversion, Missing/duplicate data handling, Feature engineering timestamps,
+                      Reordering), and loading into structured storage (CSV and database).
+                    </p>
+                    <div class="project-card-tech">Teknologi: Python, Requests, BeautifulSoup, Pandas, Google Sheets API, SQLAlchemy, unittest, Google Colab</div>
+                    <div class="project-links">
+                      <a href="https://github.com/viapiyaaa/Project-Fundamental-Pemrosesan-Data" target="_blank" title="Lihat di GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls (Previous/Next Buttons) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <h3 class="subheading">Web Development Projects</h3>
+
+      <!-- Carousel untuk menampilkan proyek Web Development -->
+      <div id="webProjectCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#webProjectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#webProjectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <!-- Tambahkan lebih banyak indikator jika Anda memiliki lebih dari 2 slide web -->
+        </div>
+
+        <div class="carousel-inner">
+          <!-- Slide 1 - Web Development Projects -->
+          <!-- Web Project Card 1 -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center g-4">
+              <!-- Web Project Card 2 -->
+              <div class="col-12 col-sm-6 col-md-4 d-flex">
+                <div class="project-card">
+                  <img src="gambar/todolist.jpg" alt="Website Portfolio Pribadi" onerror="this.onerror=null;this.src='https://placehold.co/400x200/663399/FFFFFF?text=Website+Portfolio';" />
+                  <div class="project-card-body">
+                    <h3>Website Mindful Journey</h3>
+                    <p>
+                      Mindful Journey is a productivity platform with three main features: a to-do list, diary, and daily habits tracker. It aims to improve task efficiency, reduce procrastination-related stress, and support the development
+                      of positive habits for better productivity. This project was developed by a two-person team, where I contributed as a Full-Stack Developer. The project is not yet deployed.
+                    </p>
+                    <div class="project-card-tech">Teknologi: HTML5, CSS3, JavaScript, PHP, Figma, Canva</div>
+                    <div class="project-links">
+                      <a href="https://github.com/viapiyaaa/Productivity-Platform-with-Fuzzy-Logic-Based-Task-Priority-System-Features-" target="_blank" title="Lihat di GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Web Project Card 3 -->
+              <div class="col-12 col-sm-6 col-md-4 d-flex">
+                <div class="project-card">
+                  <img src="gambar/GORK.png" alt="Landing Page Produk" onerror="this.onerror=null;this.src='https://placehold.co/400x200/FF6347/FFFFFF?text=Landing+Page';" />
+                  <div class="project-card-body">
+                    <h3>Website Booking GOR</h3>
+                    <p>Kharisma Sports Center is a website-based system for online field bookings and service management. I designed the UI/UX using Figma in a five-person team. The project is not yet deployed.</p>
+                    <div class="project-card-tech">Teknologi: Figma, HTML5, CSS3, JavaScript</div>
+                    <div class="project-links">
+                      <a href="https://github.com/viapiyaaa/Development-of-a-website-based-reservation-application-at-the-Kharisma-sports-arena-" target="_blank" title="Lihat di GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-4 d-flex">
+                <div class="project-card">
+                  <img src="gambar/EDUPREDICT.png" alt="Website Blog Sederhana" onerror="this.onerror=null;this.src='https://placehold.co/400x200/3CB371/FFFFFF?text=Blog+Website';" />
+                  <div class="project-card-body">
+                    <h3>Website-based EduPredict</h3>
+                    <p>
+                      The Opportunity Prediction System is a web application designed to predict the chances of being admitted to public universities, especially the Indonesian University of Education, based on report card grades. The
+                      results are displayed as “pass” or “fail.” I worked as a UI/UX Designer and Front-End Developer in a three-person team. This project is not yet deployed.
+                    </p>
+                    <div class="project-card-tech">Teknologi: Figma, HTML5, CSS3, Bootstrap, JavaScript, PHP</div>
+                    <div class="project-links">
+                      <a href="https://github.com/viapiyaaa/University-admission-prediction-system-based-on-report-card-grades-using-the-Naive-Bayes-algorithm." target="_blank" title="Lihat di GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 - Web Development Projects (Tambahkan jika ada lebih banyak proyek web) -->
+          <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+              <!-- Web Project Card 5 -->
+              <div class="col-12 col-sm-6 col-md-4 d-flex">
+                <div class="project-card">
+                  <img src="gambar/porto.png" alt="Aplikasi Validasi Formulir" onerror="this.onerror=null;this.src='https://placehold.co/400x200/FFD700/000000?text=Form+Validation';" />
+                  <div class="project-card-body">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Building a responsive portfolio website to showcase my projects and skills. Focusing on clean design and an intuitive user experience.</p>
+                    <div class="project-card-tech">Teknologi: HTML5, CSS3, Bootstrap, JavaScript</div>
+                    <div class="project-links">
+                      <a href="link-to-github-form-validation" target="_blank" title="Lihat di GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls (Previous/Next Buttons) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#webProjectCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#webProjectCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="skills" id="skills">
+      <h2 class="heading">Tools <span>Skills</span></h2>
+
+      <div class="Skills-container">
+        <div class="skills-box">
+          <img src="gambar/python.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/pandas.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/Numpy.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/Scikit.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/Matplotlib.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/Seaborn.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/Streamlit.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/Tensorflow.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/Keras.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/SQL.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/colab.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/Github.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/html.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/css.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/js.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/boots.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/PHP.png" alt="" />
+        </div>
+
+        <div class="skills-box">
+          <img src="gambar/figma.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- akhir services -->
+
+    <!-- My Experience Section -->
+    <section id="experience" class="experience-section">
+        <h2 class="heading">My <span>Experience</span></h2>
+        <!-- Carousel untuk menampilkan proyek Pengalaman -->
+        <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <!-- Slide 1 - Experience Projects (3 cards per slide) -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center g-4">
+                        <!-- Experience Card 1: Studi Independen -->
+                        <div class="col-12 col-sm-6 col-md-4 d-flex">
+                            <div class="experience-card">
+                                <div class="experience-card-image-container">
+                                    <img src="gambar/sertifikat.png" alt="Dicoding Academy Logo" onerror="this.onerror=null;this.src='https://placehold.co/200x150/007bff/FFFFFF?text=Dicoding+Academy';" />
+                                </div>
+                                <div class="experience-card-body">
+                                    <div>
+                                        <h3>Machine Learning Engineer (Studi Independen)</h3>
+                                        <p class="company-info">Dicoding Indonesia Powered by DBS Foundation | <span> Februari - Juli 2025</span></p>
+                                        <ul>
+                                            <li>
+                                                Learned to apply machine learning and data science by building projects such as data analysis dashboards, deep learning-based image classification, NLP sentiment analysis, simple ETL pipelines, recommendation systems, and
+                                                predictive models for data-driven decision making.
+                                            </li>
+                                            <li>Developed a website using Flask that can automatically classify waste categories, types, and recycling suggestions using a Convolutional Neural Network (CNN) model.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Card 2: Laboratory Assistant -->
+                        <div class="col-12 col-sm-6 col-md-4 d-flex">
+                            <div class="experience-card">
+                                <div class="experience-card-image-container">
+                                    <img src="gambar/laboratory.jpg" alt="University Logo" onerror="this.onerror=null;this.src='https://placehold.co/200x150/ffc107/000000?text=University';" />
+                                </div>
+                                <div class="experience-card-body">
+                                    <div>
+                                        <h3>Laboratory Assistant</h3>
+                                        <p class="company-info">Computer Engineering, Universitas Pendidikan Indonesia| <span>Mar 2023 - Des 2024</span></p>
+                                        <ul>
+                                            <li>Laboratory assistant from discrete mathematics courses, 2024.</li>
+                                            <li>Laboratory assistant from linear algebra courses, 2024.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Card 3: Community Service -->
+                         <div class="col-12 col-sm-6 col-md-4 d-flex">
+                            <div class="experience-card">
+                                <div class="experience-card-image-container">
+                                    <img src="gambar/aviskara.jpg" alt="HIMAKOM Logo" onerror="this.onerror=null;this.src='https://placehold.co/200x150/28a745/FFFFFF?text=HIMAKOM';" />
+                                </div>
+                                <div class="experience-card-body">
+                                    <div>
+                                        <h3>Head of Treasurer</h3>
+                                        <p class="company-info">Himpunan Mahasiswa Teknik Komputer (HIMA TEKKOM) | <span>Mar 2024 - Feb 2025</span></p>
+                                        <ul>
+                                            <li>Responsible for all treasury-related activities, including financial management, recording financial transactions, controlling expenses, and preparing and reporting finances.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 - Experience Projects (3 cards per slide) -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center g-4">
+                      <!-- Experience Card 5: Staff of Treasurer -->
+                        <div class="col-12 col-sm-6 col-md-4 d-flex">
+                            <div class="experience-card">
+                                <div class="experience-card-image-container">
+                                    <img src="gambar/gama nawasena.jpg" alt="Freelance Project Icon" onerror="this.onerror=null;this.src='https://placehold.co/200x150/dc3545/FFFFFF?text=Gama+Nawasena';" />
+                                </div>
+                                <div class="experience-card-body">
+                                    <div>
+                                        <h3>Staff of Treasurer</h3>
+                                        <p class="company-info">Himpunan Mahasiswa Teknik Komputer (HIMA TEKKOM) | <span>Maret 2023 - Feb 2024</span></p>
+                                        <ul>
+                                            <li>Responsible for assisting all treasury-related activities, including assisting with financial management, recording financial transactions, controlling expenditures, and preparing and reporting finances.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Card 6: Committee -->
+                        <div class="col-12 col-sm-6 col-md-4 d-flex">
+                            <div class="experience-card">
+                                <div class="experience-card-image-container">
+                                    <img src="gambar/comitte.png" alt="Freelance Project Icon" onerror="this.onerror=null;this.src='https://placehold.co/200x150/dc3545/FFFFFF?text=Committee';" />
+                                </div>
+                                <div class="experience-card-body">
+                                    <div>
+                                        <h3>Committee</h3>
+                                        <p class="company-info">Universitas Pendidikan Indonesia| <span>2022 - 2024</span></p>
+                                        <ul>
+                                            <li>Various committees within the study program as treasurer</li>
+                                            <li>Staff Consumption and Fundraising at the University - MOKAKU UPI Cibiru Regional Campus - 2023</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Experience Card 4: Head of Treasurer -->
+                         <div class="col-12 col-sm-6 col-md-4 d-flex">
+                            <div class="experience-card">
+                                <div class="experience-card-image-container">
+                                    <img src="gambar/pengab.jpg" alt="Freelance Project Icon" onerror="this.onerror=null;this.src='https://placehold.co/200x150/dc3545/FFFFFF?text=Community+Service';" />
+                                </div>
+                                <div class="experience-card-body">
+                                    <div>
+                                        <h3>Community Service</h3>
+                                        <p class="company-info">Universitas Pendidikan Indonesia| <span> 2024</span></p>
+                                        <ul>
+                                            <li>Community service through digital technology training to improve efficiency in foundation management in Bandung city, 2024</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls (Previous/Next Buttons) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#experienceCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#experienceCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- serifikasi -->
+    <section class="portofolio" id="certificates">
+      <h2 class="heading">My <span>Certifications</span></h2>
+      <div class="portofolio-container justify-content-center">
+        <div class="portofolio-box">
+          <img src="gambar/dasarsql.png" alt="" />
+          <div class="portofolio-layer">
+            <p>Belajar Dasar Structured Query Language (SQL)</p>
+            <a href="https://www.dicoding.com/certificates/81P2L582OZOY" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portofolio-box">
+          <img src="gambar/analisispython.png" alt="" />
+          <div class="portofolio-layer">
+            <p>Belajar Analisis Data dengan Python</p>
+            <a href="https://www.dicoding.com/certificates/07Z63DJQRZQR" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portofolio-box">
+          <img src="gambar/visualisasidata.png" alt="" />
+          <div class="portofolio-layer">
+            <p>Belajar Dasar Visualisasi Data</p>
+              <a href="https://www.dicoding.com/certificates/4EXGVVEWGXRL" target="_blank">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="portofolio-box">
+          <img src="gambar/fundamentaldata.png" alt="" />
+          <div class="portofolio-layer">
+            <p>Belajar Fundamental Pemrosesan Data</p>
+            <a href="https://www.dicoding.com/certificates/2VX3KD9E3XYQ" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portofolio-box">
+          <img src="gambar/fundandeep.png" alt="" />
+          <div class="portofolio-layer">
+            <p>Belajar Fundamental Deep Learning</p>
+            <a href="https://www.dicoding.com/certificates/72ZD5WGMJZYW" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portofolio-box">
+          <img src="gambar/mlterapan.png" alt="" />
+          <div class="portofolio-layer">
+            <p>Machine Learning Terapan</p>
+            <a href="https://www.dicoding.com/certificates/4EXGVM9NQXRL" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 d-flex justify-content-end">
+        <a href="certificates.html" class="btn btn-view-all">View all certificates</a>
+      </div>
+    </section>
+    <!-- akhir portofolio -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="https://formspree.io/f/mldlgyvj" method="POST">
+        <div class="input-box">
+          <input type="text" name="full_name" class="form-control" placeholder="Full Name" required />
+          <input type="email" name="email_address" class="form-control" placeholder="Email Address" required />
+        </div>
+
+        <div class="input-box">
+          <input type="tel" name="mobile_number" class="form-control" placeholder="Mobile Number" />
+          <input type="text" name="email_subject" class="form-control" placeholder="Email Subject" required />
+        </div>
+        <textarea name="message" class="form-control" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="send Message" class="btn" />
+      </form>
+    </section>
+    <!-- akhir contact -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by @eviafiyatus_ | All Rights Reserved</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+      </div>
+    </footer>
+    <!-- akhir foooter -->
+
+    <!-- scroll reveal js -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- main js -->
+    <script src="main.js" defer></script>
+    <script src="three.js"></script>
+    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
